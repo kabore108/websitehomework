@@ -1,6 +1,6 @@
 baseURL: https://wendyam.netlify.app/
 languageCode: en-us
-title: Forty
+title: mySITE
 theme: forty
 googleAnalytics: ''
 disqusShortname: ''
@@ -21,11 +21,11 @@ params:
     buttonClear: Clear
     buttonSend: Send message
     email:
-      - email: example@domain.com
+      - email: dkabore725@gmail.com
         title: Email
     enable: yes
     phone:
-      - phone: (000) 000-0000 x1234
+      - phone: (+226) 72380739
         title: Phone
   custom_css: []
   custom_js: []
