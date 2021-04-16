@@ -1,0 +1,24 @@
+---
+categories:
+- ""
+- ""
+date: "2017-10-31T21:28:43-05:00"
+description: "kabore Eleazar Wendyam David"
+draft: false
+image: pic10.jpg
+keywords: ""
+slug: aboutme
+title: about
+---
+
+hi my name is **DAVID KABORE** 
+
+
+
+**my HOOBBIES**
+
+1. DRUMMING
+1. POLITICS
+1. LEARNING
+1. SPORT 
+1. VISIT

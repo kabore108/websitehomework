@@ -1,0 +1,62 @@
+---
+categories:
+- ""
+- ""
+date: "2017-10-31T21:28:43-05:00"
+description: "kabore Eleazar Wendyam David"
+draft: false
+image: bush.jpg
+keywords: ""
+slug: beer
+title: beer
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="where-do-people-drink-the-most-beer-wine-and-spirits" class="section level1">
+<h1>Where Do People Drink The Most Beer, Wine And Spirits?</h1>
+<p>Back in 2014, <a href="https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/">fivethiryeight.com</a> published an article on alchohol consumption in different countries. The data <code>drinks</code> is available as part of the <code>fivethirtyeight</code> package. Make sure you have installed the <code>fivethirtyeight</code> package before proceeding.</p>
+<pre class="r"><code>library(fivethirtyeight)
+data(drinks)
+
+
+# or download directly
+ #alohol_direct &lt;- read_csv(&quot;https://raw.githubusercontent.com/fivethirtyeight/data/master/alcohol-consumption/drinks.csv&quot;)</code></pre>
+<p>What are the variable types? Any missing values we should worry about?</p>
+<pre class="r"><code># YOUR CODE GOES HERE
+#typeof(alcohol_direct)
+##arrange(Countries)
+glimpse(drinks)</code></pre>
+<pre><code>## Rows: 193
+## Columns: 5
+## $ country                      &lt;chr&gt; &quot;Afghanistan&quot;, &quot;Albania&quot;, &quot;Algeria&quot;, &quot;And~
+## $ beer_servings                &lt;int&gt; 0, 89, 25, 245, 217, 102, 193, 21, 261, 2~
+## $ spirit_servings              &lt;int&gt; 0, 132, 0, 138, 57, 128, 25, 179, 72, 75,~
+## $ wine_servings                &lt;int&gt; 0, 54, 14, 312, 45, 45, 221, 11, 212, 191~
+## $ total_litres_of_pure_alcohol &lt;dbl&gt; 0.0, 4.9, 0.7, 12.4, 5.9, 4.9, 8.3, 3.8, ~</code></pre>
+<p>Make a plot that shows the top 25 beer consuming countries</p>
+<pre class="r"><code># YOUR CODE GOES HERE
+#library(fivethirtyeight)
+#install.packages(&quot;fivethirtyeight&quot;)</code></pre>
+<p>Make a plot that shows the top 25 wine consuming countries</p>
+<pre class="r"><code># YOUR CODE GOES HERE
+
+drinks %&gt;%  
+  arrange(desc(wine_servings)) %&gt;% 
+  head(25) %&gt;% 
+  ggplot(aes(y=reorder(country,wine_servings),
+             x=wine_servings))+
+  
+  geom_col(fill=&quot;yellow&quot;)+
+    theme(legend.position = &quot;none&quot;)+
+  
+  
+labs(
+  title = &quot;top wine counsumers&quot;)</code></pre>
+<p><img src="/blogs/Beer_files/figure-html/wine_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>    x=&quot;country&quot;
+    y=&quot;wine_counsumers&quot;</code></pre>
+<p>Finally, make a plot that shows the top 25 spirit consuming countries</p>
+<pre class="r"><code># YOUR CODE GOES HERE</code></pre>
+</div>

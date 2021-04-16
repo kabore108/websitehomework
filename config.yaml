@@ -8,15 +8,14 @@ params:
   banner:
     buttonText: Get Started
     subtitle: |-
-      A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP
-      AND RELEASED UNDER THE CREATIVE COMMONS.
-    title: Hi, my name is Forty
+     HELLO I AM VERRY EXITED TO WORK WITH YOU you can download myCV.
+    title: Hi, my name is DAVID IT student developper 
   blog: {}
   contact:
     address:
-      - city: City, ST 00000
-        country: Country
-        street: Street
+      - city: koudougou,  
+        country: BURKINA FASO
+        street: Avenue dreux
         title: Address
     buttonClear: Clear
     buttonSend: Send message
@@ -82,13 +81,13 @@ params:
     enable: yes
     showcase:
       - image: pic01.jpg
-        subtitle: Ipsum Dolor Sit Amet
-        title: Aliquam
-        url: blogs/aliquam
+        subtitle: top beer and wine consumption
+        title: where do the pepople drink the most?
+        url: blogs/beer
       - image: pic02.jpg
-        subtitle: Feugiat Amet Tempus
-        title: Tempus
-        url: blogs/tempus
+        subtitle: personalize your life 
+        title: YOU
+        url: blogs/aboutme
       - image: pic03.jpg
         subtitle: Lorem Etiam Nullam
         title: Magna
